@@ -36,6 +36,11 @@ public class Numeracion {
 			this.indicativo = json.getString("INDICATIVO");
 	}
 	
+	public Numeracion(String prefijo, String bloque) {
+		this.indicativo = prefijo;
+		this.bloque = bloque;
+	}
+
 	public String getServicio() {
 		return servicio;
 	}

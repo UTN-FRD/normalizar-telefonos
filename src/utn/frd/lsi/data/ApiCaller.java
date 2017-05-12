@@ -49,6 +49,7 @@ public class ApiCaller {
 		return result;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Numeracion> get(String prefijo) throws JSONException, IOException {
 		String cacheKey = "GET"+prefijo;
 		if(cache.containsKey(cacheKey)){
@@ -69,6 +70,7 @@ public class ApiCaller {
 		return result;
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<Numeracion> get(String prefijo, String bloque) throws JSONException, IOException {
 		String cacheKey = "GET"+prefijo+bloque;
 		if(cache.containsKey(cacheKey)){
